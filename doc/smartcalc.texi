@@ -1,0 +1,167 @@
+\input texinfo @c -*-texinfo-*-
+@c %**start of header
+@setfilename smartcalc.info
+@include version.texi
+@settitle SmartCalc @value{VERSION}
+@c %**end of header
+
+@copying
+This manual is for SmartCalc (version @value{VERSION}, @value{UPDATED}),
+extended version of the usual calculator, which can be found in the standard
+applications of each operating system.
+
+Copyright @copyright{} @value{YEAR}
+School 21 License.
+
+@quotation
+Thx to school.
+@end quotation
+@end copying
+
+@titlepage
+@title SmartCalc
+@subtitle for version @value{VERSION}, @value{UPDATED}
+@author Irilethj (@email{irilethj@@student.21-school.ru})
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@contents
+
+
+@ifnottex
+@node Top
+@top SmartCalc
+
+This manual is for SmartCalc (version @value{VERSION}, @value{UPDATED}).
+@end ifnottex
+
+@menu
+* Overview::	    General purpose and information.
+* Sample output::	Interface & output.
+@end menu
+
+
+@node Overview
+@chapter Overview
+
+The SmartCalc v@value{VERSION} program:
+
+@itemize @bullet
+
+@item
+The program developed in in C++ language of C++17 standard. 
+
+@item
+The program code located in the src folder
+
+@item
+The program built with Makefile which contains standard set of targets for GNU-programs: all, install, uninstall, clean, dvi, dist, tests. Installation directory is HOME
+
+@item
+Code follow the Google style
+
+@item
+Classes implement within the `s21` namespace
+
+@item
+Full coverage of modules related to calculating expressions with unit-tests using the GTest library
+
+@item
+GUI implementation, based on any GUI library with Qt
+
+@item
+The program implement using the MVC pattern
+
+@item
+Integers, real numbers with a dot and numbers in exponential notation can be input into the program.
+
+@item
+The calculation done after you complete entering the calculating expression and press the = symbol.
+
+@item
+Calculating arbitrary bracketed arithmetic expressions in infix notation
+
+@item
+Calculate arbitrary bracketed arithmetic expressions in infix notation with substitution of the value of the variable x as a number
+
+@item
+Plotting a graph of a function given by an expression in infix notation with the variable x (with coordinate axes, mark of the used scale and an adaptive grid)
+
+@item
+Domain and codomain of a function are limited to at least numbers from -1000000 to 1000000
+
+@item
+Verifiable accuracy of the fractional part is at least to 7 decimal places
+
+@item
+Users can to enter up to 255 characters
+@item
+Bracketed arithmetic expressions in infix notation supports the following arithmetic operations and mathematical functions:
+@itemize @bullet
+@item
+Arithmetic operators:
+
+@table @code
+@item Brackets
+(a + b)
+@item Addition
+a + b
+@item Subtraction
+a - b
+@item Multiplication
+a * b
+@item Division
+a / b
+@item Power
+a ^ b
+@item Modulus
+a mod b
+@item Unary plus
++a
+@item Unary minus
+-a
+@end table
+@item
+Functions:
+@table @code
+@item Computes cosine
+cos(x)
+@item Computes sine
+sin(x)
+@item Computes tangent
+tan(x)
+@item Computes arc cosine
+acos(x)
+@item Computes arc sine
+asin(x)
+@item Computes arc tangent
+atan(x)
+@item Computes square root
+sqrt(x)
+@item Computes natural logarithm
+ln(x)
+@item Computes common logarithm
+log(x)
+@end table
+
+@end itemize
+
+
+@end itemize
+
+
+
+@node Interface & output
+@chapter Interface & output
+
+Calculator:
+
+@image{images/smartcalc, 8cm}
+
+Plotting a graph:
+
+@image{images/smartcalc_graph, 10cm}
+
+@bye
